@@ -71,5 +71,41 @@ Enter git clone https://github.com/unh-comp-698-systems-software/notes
 Open up the "localenvironmentsetup.md file from Files and paste in the changes
 Save the file
 
+Now to Submit to Git
+Open the terminal
+Now you must navigate to the directory in which you want your repository to sit
+if it is a folder within documents, you can enter "cd documents" and then "cd yourfile".
+Now Enter "git init" to initialize this folder as a git repository
+Now Configure your git account by entering "git config --global user.email "your email address"
+And then enter git config --global user.name "A username"
+Now you can add the files to your local repository by entering in git add .
+Now you can commit those changes by entering in git commit -a -m "enter a message in this format"
+-a means add everything in the commit and -m means add a message with the commit.
+Enter git remote origin
+Enter git remote add 'Your Folder Name Not in Parenthesis' 'The git repository url'
+An Example of this can be seen here: greg@greg-VirtualBox:~/Documents/notes$ git remote add Systemnotes https://github.com/tinkhamgreg/SystemsNotes.git
+
+Now we can push the repository to our repository on git
+Enter git push 'Your filename not in parenthesis' master
+Heres an example: greg@greg-VirtualBox:~/Documents/notes$ git push Systemnotes master
+Enter your username in the prompt that you created above
+enter the password for your github account
+You should see output that describes transfering objects.
+Here's an example:
+Username for 'https://github.com': Tinkhamgreg
+Password for 'https://Tinkhamgreg@github.com': 
+Counting objects: 9, done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.84 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/tinkhamgreg/SystemsNotes.git
+ * [new branch]      master -> master
+
+You have successfully added your local changes to your git repository, you can check them online.
+
+
+
+
 
 
